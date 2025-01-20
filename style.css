@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px, solid, red; */
+    border: 1px, solid, red;
+}
+
+:root {
+    --color-blue: #050647;
+    --color-grey: rgb(200, 200, 200);
+    --color-white: white;
 }
 
 html {
-    background-color: #050647;
+    background-color: var(--color-blue);
 }
 
 body {
@@ -15,18 +21,19 @@ body {
     width: 80%;
 }
 
-h1{
+h1,
+h2 {
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding: 2rem;
 
-    color: whitesmoke;
+    color: var(--color-white);
 }
 
 form {
-    background-color: rgb(200, 200, 200);
+    background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 5rem;
 
@@ -67,4 +74,20 @@ button {
     width: 300px;
     border: 0;
     border-radius: 5rem;
+}
+
+/* TICKET */
+.ticket {
+    background-color: var(--color-grey);
+    padding: 2rem;
+    border-radius: 5rem;
+}
+
+hr {
+    border: 1px, dashed, var(--color-blue);
+    margin: 1rem 0;
+}
+
+.display-none {
+    display: none;
 }
