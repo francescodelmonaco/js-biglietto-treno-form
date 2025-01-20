@@ -63,7 +63,7 @@ btnGenera.addEventListener("click", () => {
 
     numeroCarrozza.innerHTML = numero(1, 5);
 
-    // code
+    // codice cp
     let numeroCodice = document.getElementById("code");
 
     numeroCodice.innerHTML = numero(1, 100000);
