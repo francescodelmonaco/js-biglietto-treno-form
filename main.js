@@ -30,4 +30,8 @@ btnGenera.addEventListener("click", () => {
     } else {
         console.log(`Il costo del viaggio è di ${standardPrice.toFixed(2)}€.`)
     }
+
+    // let ticketOnOff = document.getElementById("ticketOnOff")
+    // ticketOnOff.classList.remove("display-none");
 })
+

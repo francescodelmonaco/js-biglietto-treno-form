@@ -89,5 +89,13 @@ hr {
 }
 
 .display-none {
-    display: none;
+    /* display: none; */
+}
+
+.ticket_info {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 5rem;
 }

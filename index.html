@@ -18,24 +18,24 @@
             <ul>
                 <li>
                     <span><strong>Nome passeggero</strong></span>
-                    <input type="text" placeholder="Inserisci nome e cognome">
+                    <input id="name" type="text" placeholder="Inserisci nome e cognome" autocomplete="off">
                 </li>
     
                 <li>
                     <span><strong>Km da percorrere</strong></span>
-                    <input id="distance" type="number" placeholder="Inserisci il numero di km">
+                    <input id="distance" type="number" placeholder="Inserisci il numero di km" autocomplete="off">
                 </li>
     
                 <li>
                     <span><strong>Età passeggero</strong></span>
-                    <input id="age" type="number" placeholder="Inserisci l'età del passeggero">
+                    <input id="age" type="number" placeholder="Inserisci l'età del passeggero" autocomplete="off">
                 </li>
             </ul>
 
-            <button id="btn-cost"><strong>Genera</strong></button>
+            <button id="btn-cost" type="submit"><strong>Genera</strong></button>
         </form>
 
-        <div class="display-none">
+        <div class="display-none" id="ticketOnOff">
             <h2>IL TUO BIGLIETTO</h2>
 
             <div class="ticket">
@@ -43,7 +43,37 @@
                 
                 <hr>
 
+                <div class="ticket_info">
+                    <div>
+                        <span><strong>NOME PASSEGGERO</strong></span>
+                        <!-- inserisci nome e cognome da input -->
+                        <span></span>
+                    </div>
 
+                    <div>
+                        <span><strong>Offerta</strong></span>
+                        <!-- inserisci tipologia biglietto con condizione if in base all'età -->
+                        <span></span>
+                    </div>
+
+                    <div>
+                        <span><strong>Carrozza</strong></span>
+                        <!-- inserisci numero random -->
+                        <span></span>
+                    </div>
+
+                    <div>
+                        <span><strong>Codice CP</strong></span>
+                        <!-- inserisci numero random -->
+                        <span></span>
+                    </div>
+
+                    <div>
+                        <span><strong>Costo biglietto</strong></span>
+                        <!-- inserisci costo biglietto -->
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
