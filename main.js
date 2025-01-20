@@ -25,6 +25,7 @@ btnGenera.addEventListener("click", () => {
     let underPrice = (standardPrice - (standardPrice * 20 / 100));
     let overPrice = (standardPrice - (standardPrice * 40 / 100));
 
+    // console
     if (ageValue < 18) {
         console.log(`Il costo del viaggio è di ${underPrice.toFixed(2)}€.`);
     } else if (ageValue >= 65) {
@@ -40,6 +41,17 @@ btnGenera.addEventListener("click", () => {
     let infoUser = document.getElementById("userName");
     let nameLastName = document.getElementById("name").value;
     infoUser.innerHTML = nameLastName;
+
+    // offerta
+    let ticketType = document.getElementById("discount");
+
+    if (ageValue < 18) {
+        ticketType.innerHTML = "Biglietto minorenni";
+    } else if (ageValue >= 65) {
+        ticketType.innerHTML = "Biglietto ridotto over 65";
+    } else {
+        ticketType.innerHTML = "Biglietto standard";
+    }
 
     // carrozza
     let numeroCarrozza = document.getElementById("carrozza");

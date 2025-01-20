@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px, solid, red;
+    /* border: 1px, solid, red; */
 }
 
 :root {
     --color-blue: #050647;
     --color-grey: rgb(200, 200, 200);
-    --color-white: white;
+    --color-white: rgb(222, 222, 222);
+    --color-black: rgb(22, 22, 22);
 }
 
 html {
@@ -36,6 +37,7 @@ form {
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 5rem;
+    box-shadow: 5px 5px 50px var(--color-black);
 
     display: flex;
     flex-direction: column;
@@ -81,6 +83,14 @@ button {
     background-color: var(--color-grey);
     padding: 2rem;
     border-radius: 5rem;
+    box-shadow: 5px 5px 50px var(--color-black);
+}
+
+h3 {
+    background-color: var(--color-white);
+    padding: 1.5rem 2.5rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
 }
 
 hr {
@@ -97,7 +107,8 @@ hr {
     justify-content: space-between;
     background-color: var(--color-white);
     padding: 1rem;
-    border-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 
 .ticket_info_flex {
@@ -105,4 +116,6 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
 }

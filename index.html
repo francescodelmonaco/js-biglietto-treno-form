@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form biglietto del treno</title>
 
-    <!-- CSS STYLE -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -36,7 +42,7 @@
         </form>
 
         <div class="display-none" id="ticketOnOff">
-            <h2>IL TUO BIGLIETTO</h2>
+            <h2>RECAP DEL TUO BIGLIETTO</h2>
 
             <div class="ticket">
                 <h3>Dettaglio passeggeri</h3>
@@ -51,8 +57,7 @@
 
                     <div class="ticket_info_flex">
                         <span><strong>Offerta</strong></span>
-                        <!-- inserisci tipologia biglietto con condizione if in base all'età -->
-                        <span></span>
+                        <span id="discount"></span>
                     </div>
 
                     <div class="ticket_info_flex">
@@ -74,7 +79,7 @@
         </div>
     </main>
 
-    <!-- JS -->
+    <!-- js -->
     <script src="./main.js"></script>
 </body>
 </html>
