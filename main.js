@@ -36,6 +36,11 @@ btnGenera.addEventListener("click", () => {
     let ticketOnOff = document.getElementById("ticketOnOff");
     ticketOnOff.classList.remove("display-none");
 
+    //nome cognome
+    let infoUser = document.getElementById("userName");
+    let nameLastName = document.getElementById("name").value;
+    infoUser.innerHTML = nameLastName;
+
     // carrozza
     let numeroCarrozza = document.getElementById("carrozza");
 
@@ -45,6 +50,11 @@ btnGenera.addEventListener("click", () => {
     };
 
     numeroCarrozza.innerHTML = numero(1, 5);
+
+    // code
+    let numeroCodice = document.getElementById("code");
+
+    numeroCodice.innerHTML = numero(1, 100000);
 
     // costo
     let finalCost = document.getElementById("cost");
