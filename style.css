@@ -1,0 +1,29 @@
+* {
+    font-family: sans-serif;
+    border: 1px, solid, red;
+}
+
+html {
+    background-color: #050647;
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    color: whitesmoke;
+}
+
+form {
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 5rem;
+}
