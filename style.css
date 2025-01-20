@@ -1,6 +1,9 @@
 * {
     font-family: sans-serif;
-    border: 1px, solid, red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px, solid, red; */
 }
 
 html {
@@ -9,7 +12,7 @@ html {
 
 body {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 h1{
@@ -23,7 +26,45 @@ h1{
 }
 
 form {
-    background-color: whitesmoke;
+    background-color: rgb(200, 200, 200);
+    padding: 2rem;
+    border-radius: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    gap: 5rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
     padding: 1rem;
+    border-radius: 5rem;
+    width: 300px;
+    border: 0;
+}
+
+button {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 0;
     border-radius: 5rem;
 }
