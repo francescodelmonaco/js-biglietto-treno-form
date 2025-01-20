@@ -31,6 +31,7 @@ h2 {
     padding: 3rem 0;
 
     color: var(--color-white);
+    text-align: center;
 }
 
 form {
@@ -78,7 +79,7 @@ button {
     border-radius: 5rem;
 }
 
-/* TICKET */
+/* ticket */
 .ticket {
     background-color: var(--color-grey);
     padding: 2rem;
@@ -119,4 +120,28 @@ hr {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
+}
+
+/* responsive < 1440px */
+@media screen and (max-width: 1440px) {
+
+    ul {
+        list-style-type: none;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .ticket_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-white);
+        padding: 1rem;
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+
 }

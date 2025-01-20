@@ -73,11 +73,11 @@ btnGenera.addEventListener("click", () => {
 
     function cost () {
         if (ageValue < 18) {
-            return parseInt(underPrice);
+            return underPrice;
         } else if (ageValue >= 65) {
-            return parseInt(overPrice);
+            return overPrice;
         } else {
-            return parseInt(standardPrice);
+            return standardPrice;
         }
     }
 
