@@ -89,7 +89,7 @@ hr {
 }
 
 .display-none {
-    /* display: none; */
+    display: none;
 }
 
 .ticket_info {
@@ -98,4 +98,11 @@ hr {
     background-color: var(--color-white);
     padding: 1rem;
     border-radius: 5rem;
+}
+
+.ticket_info_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

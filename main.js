@@ -12,6 +12,8 @@ let userAge = document.getElementById("age");
 let btnGenera = document.getElementById("btn-cost");
 
 btnGenera.addEventListener("click", () => {
+    event.preventDefault();
+    
     let distanceValue = parseInt(userDistance.value);
     let ageValue = parseInt(userAge.value);
     
@@ -24,14 +26,38 @@ btnGenera.addEventListener("click", () => {
     let overPrice = (standardPrice - (standardPrice * 40 / 100));
 
     if (ageValue < 18) {
-        console.log(`Il costo del viaggio è di ${underPrice.toFixed(2)}€.`)
+        console.log(`Il costo del viaggio è di ${underPrice.toFixed(2)}€.`);
     } else if (ageValue >= 65) {
-        console.log(`Il costo del viaggio è di ${overPrice.toFixed(2)}€.`)
+        console.log(`Il costo del viaggio è di ${overPrice.toFixed(2)}€.`);
     } else {
-        console.log(`Il costo del viaggio è di ${standardPrice.toFixed(2)}€.`)
+        console.log(`Il costo del viaggio è di ${standardPrice.toFixed(2)}€.`);
     }
 
-    // let ticketOnOff = document.getElementById("ticketOnOff")
-    // ticketOnOff.classList.remove("display-none");
-})
+    let ticketOnOff = document.getElementById("ticketOnOff");
+    ticketOnOff.classList.remove("display-none");
 
+    // carrozza
+    let numeroCarrozza = document.getElementById("carrozza");
+
+    function numero (min, max) {
+        let random = Math.floor(Math.random()*max)+min;
+        return random;
+    };
+
+    numeroCarrozza.innerHTML = numero(1, 5);
+
+    // costo
+    let finalCost = document.getElementById("cost");
+
+    function cost () {
+        if (ageValue < 18) {
+            return parseInt(underPrice);
+        } else if (ageValue >= 65) {
+            return parseInt(overPrice);
+        } else {
+            return parseInt(standardPrice);
+        }
+    }
+
+    finalCost.innerHTML = cost().toFixed(2);
+})
